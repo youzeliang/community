@@ -2,6 +2,7 @@ package com.community.com.rest;
 
 import com.community.com.model.bo.RestResponseBo;
 import org.apache.catalina.servlet4preview.http.HttpServletRequest;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletResponse;
@@ -16,7 +17,7 @@ public class AuthController {
                                 @RequestParam String password,
                                 HttpServletRequest request,
                                 HttpServletResponse response
-    ){
+    ) {
         return RestResponseBo.ok();
     }
 }
